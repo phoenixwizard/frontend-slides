@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>HTML Session 3</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>FRONTEND DAY 3</h2>
+				</section>
+				<section>
+				<h3>What we will cover?</h3>
+				<ul>
+					<li>What is CSS?</li>
+					<li>CSS basic philosophy and understanding.</li>
+					<li>When to write CSS.</li>
+					<li>How to write CSS.</li>
+					<li>Problem Statement 3</li>
+				</ul>
+				</section>
+				<section>
+					<h3>What is CSS?</h3>
+					<ul>
+						<li>1994 - CERN - Håkon Wium Lie</li>
+						<li>All browsers had different styling</li>
+						<li>Voila's styling. DSSSL. </li>
+						<li>1997 - Own working group</li>
+						<li>IE 3, Netscape 4 (JSSS), </li>
+						<li>IE's Top 10 CSS Problems 1998</li>
+					</ul>
+				</section>
+				<section>
+					<h3>CSS basic philosophy and understanding?</h3>
+					<ul>
+						<li> The separation of document content from document presentation.</li>
+						<li>Cascading</li>
+						<li>User agent, User, Author</li>
+						<li>Specificity & inheritence?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>When to write CSS?</h3>
+					<ul>
+						<li>Any type of styling.</li>
+						<li>Any type of presentation.</li>
+						<li>Maintainable code.</li>
+						<li>DRY</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>How to write CSS.</h3>
+					<ul>
+						<li>Selectors. Combining them?</li>
+						<li>Syntax</li>
+						<li>Specificity & inheritence?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Specificity</h3>
+						<ul>
+							A selector's specificity is calculated as follows:
+
+							<li>count the number of ID attributes in the selector (= a)</li>
+							<li>count the number of other attributes </li>
+							<li>count the number of element names in the selector (= c)</li>
+							<li>Concatenating the three numbers a-b-c (in a number system with a large base) gives the specificity</li>
+							<li><a href="https://stuffandnonsense.co.uk/archives/images/specificitywars-05v2.jpg">https://stuffandnonsense.co.uk/archives/images/specificitywars-05v2.jpg</a></li>
+
+						</ul>
+				</section>
+
+				<section>
+					<h3>CSS properties</h3>
+					<ul>
+						<li>Text properties</li>
+						<li>Image properties</li>
+						<li>Background properties</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Problem Statement 3</h3>
+						<ul>
+							<li>Add more classes to your author page.</li>
+							<li>Demonstrate the CSS specificity that you learnt.</li>
+							<li>Add some "jing to your page".</li>
+							<li>Add more content please?</li>
+						</ul>
+
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
