@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>HTML Session 2</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>JAVASCRIPT DAY 1</h2>
+				</section>
+				<section>
+				<h3>What we will cover?</h3>
+				<ul>
+					<li>History of Javascript? </li>
+					<li>What is JavaScript?</li>
+					<li>Let's get our hands dirty</li>
+					<li>jQuery</li>
+					<li>Problem Statement</li>
+				</ul>
+				</section>
+
+				<section>
+					<h3>History of JS</h3>
+					<ul>
+						<li>JavaScript, not to be confused with Java, was created in 10 days in May 1995 by Brendan Eich, then working at Netscape and now of Mozilla. </li>
+                        <li> Mocha/ LiveScript / JavaScript .</li>
+                        <li>ECMAScript is the name of the official standard, with JavaScript being the most well known of the implementations</li>
+                        <li>Over time it was clear though that Microsoft had no intention of cooperating or implementing proper JS in IE (ES4 work was mothballed)</li>
+
+					</ul>
+				</section>
+
+				<section>
+					<h3>History of JS</h3>
+					<ul>
+                        <li>Ajax whitepaper by Jesse James Garrett : 2005 -> Opensource zindabad !! </li>
+                        <li>2008 the disparate parties on either side came together in Oslo -> ECMA 5</li>
+                        <li>ECMA 6 and 7 !!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>What is Javascript ?</h3>
+					<img src="JavaScript-the-good-parts.jpg" alt="">
+				</section>
+
+				<section>
+					<h3>What is Javascript ?</h3>
+					<ul>
+						<li>JavaScript is a programming language that allows you to implement complex things on web pages</li>
+						<img src="cake.png" alt="">
+					</ul>
+				</section>
+
+				<section>
+					<h3>What is Javascript ?</h3>
+					<ul>
+						<li>HTML : We use to structure and give meaning to our web content, for example defining paragraphs, headings in the page.</li>
+						<li>CSS : language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts.</li>
+						<li>JavaScript is a programming language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Let's get dirty</h3>
+					<ul>
+						<li>Browser environments.</li>
+						<li>window : root object ->  global object for JavaScript code -> represents the “browser window”</li>
+						<img src="2.png" alt="">
+						<li>DOM -> The document object gives access to the page content</li>
+						<img src="1.png" alt="">
+					</ul>
+				</section>
+
+				<section>
+					<h3>Let's get dirty</h3>
+					<ul>
+						<li>Browser environments.</li>
+						<li>BOM ->  additional objects provided by the browser (host environment) to work with everything except the document.</li>
+						<img src="3.png" alt="">
+					</ul>
+				</section>
+
+				<section>
+					<h3>DOM Tree</h3>
+					<ul>
+						<li><img src="4.png" alt=""></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Walking the DOM</h3>
+						<ul>
+							<li><img src="dom-links.png" alt=""></li>
+						</ul>
+
+				</section>
+
+				<section>
+					<h3>Events</h3>
+						<ul>
+							<li>An event is a signal that something has happened. All DOM nodes generate such signals</li>
+							<li>Mouse events: click | contextmenu | mouseover | mouseout | mousedown | mouseup | mousemove </li>
+							<li>Form events: submit | focus  </li>
+							<li>Keyboard events: keydown | keyup  </li>
+						</ul>
+				</section>
+
+				<section>
+					<h3>Events Bubbling</h3>
+						<ul>
+							<li>Bubbling : When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.</li>
+						</ul>
+
+				</section>
+
+				<section>
+					<h3>jQuery time !!</h3>
+					<ul>
+						<li>jQuery was originally released in January 2006 at BarCamp NYC by John Resig </li>
+						<li> jQuery simplifies the syntax for finding, selecting, and manipulating these DOM elements</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Let's do everything we learnt so far with jQuery !!</h3>
+					<ul>
+						<li>Practical time </li>
+						<li>$(selector).find</li>
+						<li>$(selector).children</li>
+						<li>$(selector).siblings</li>
+						<li>Listeners</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Problem statement</h3>
+					<ul>
+						<li>Create a webpage which includes a form. If I say my name is Aram, it should show a dancing panda </li>
+						<li>If I say my name is Nishant, it should show a PJ </li>
+						<li>If I say my name is Pankaj, it should show an alert saying hahaha !! and print in console "I am awesome". </li>
+						<li>Also load the logo of argildx and when I click on it, it should shout "Hip Hip Hurray"</li>
+						<li>People not doing assignment will treat everyone in team with something very tasty :D</li>
+					</ul>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
