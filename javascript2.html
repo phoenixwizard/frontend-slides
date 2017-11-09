@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Javascript Session 2</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>JAVASCRIPT DAY 2</h2>
+				</section>
+				<section>
+				<h3>What we will cover?</h3>
+				<ul>
+                    <li>Q & A</li>
+                    <li>var and let and const</li>
+					<li>Functions in JS? </li>
+                    <li>Classes in JS?</li>
+                    <li>Callbacks and promises</li>
+					<li>Problem Statement</li>
+				</ul>
+				</section>
+
+				<section>
+					<h3>Functions in JS</h3>
+					<ul>
+                        <li>function Roger { <br>
+                          &nbsp;&nbsp;  console.log("I am hungry") <br>
+                            }</li>
+						<li>nishant = { <br>
+                            &nbsp;&nbsp;saySomething: function(){ <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;    console.log("Which song is this???...12.9999999999 ....Tera, Hone Laga Hoon…"); <br>
+                                &nbsp;&nbsp; } <br>
+                        }</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>ES6</h3>
+					<ul>
+                        <li>Traditionally JavaScript is a prototype-based programming language which “classes are not present, and behavior reuse (known as inheritance in class-based languages) is accomplished through a process of decorating existing objects which serve as prototypes” - Mozilla MDN.</li>
+                        <li>This basically means that we are able to mimic object oriented programming by creating an object with prototype methods which other objects will then use as a base or inherit.</li>
+
+					</ul>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>you make prototype objects, and then … make new instances. Objects are mutable in JavaScript, so we can augment the new instances, giving them new fields and methods. These can then act as prototypes for even newer objects. We don't need classes to make lots of similar objects… Objects inherit from objects. What could be more object oriented than that? -  Douglas Crockford</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <ul>
+                        <li><img src="func1.png" alt=""></li>
+                    </ul>
+                </section>
+
+                <section>
+                        <ul>
+                            <li><img src="func2.png" alt=""></li>
+                        </ul>
+                </section>
+
+                <section>
+                        <ul>
+                            <li><img src="func3.png" alt=""></li>
+                        </ul>
+                </section>
+
+                <section>
+                        <h3>Things to note</h3>
+                        <ul>
+                            <li>Class body can only have methods, no properties</li>
+                            <li>Still no private functions in ES6 Classes</li>
+                            <li>Class initialization is not hoisted so it will need to be declared before used (else getting a RunTime Error) unlike function declarations which would be undefined.</li>
+
+                        </ul>
+                </section>
+
+                <section>
+                        <h3>Callback</h3>
+                        <ul>
+                            <li>A callback function, also known as a higher-order function, is a function that is passed to another function (let's call this other function “otherFunction”) as a parameter, and the callback function is called (or executed) inside the otherFunction.</li>
+                            <li>$('.pankaj').click(function(e){alert("Yahoo !!");})</li>
+                        </ul>
+                </section>
+
+                <section>
+                        <h3>Promises</h3>
+                        <ul>
+                            <li>A promise represents the eventual result of an asynchronous operation. It is a placeholder into which the successful result value or reason for failure will materialize.</li>
+                            <li> <img src="prom1.png" alt=""> </li>
+                        </ul>
+                </section>
+
+                <section>
+                        <h3>Promises</h3>
+                        <ul>
+                            <li> <img src="prom2.png" alt=""> </li>
+                        </ul>
+                </section>
+
+				<section>
+					<h3>Problem statement</h3>
+					<ul>
+						<li>Create a webpage which includes a form. If I say my name is Aram, it should show a dancing panda </li>
+						<li>If I say my name is Nishant, it should show a PJ </li>
+						<li>If I say my name is Pankaj, it should show an alert saying hahaha !! and print in console "I am awesome". </li>
+						<li>Also load the logo of argildx and when I click on it, it should shout "Hip Hip Hurray"</li>
+						<li>People not doing assignment will treat everyone in team with something very tasty :D</li>
+					</ul>
+                </section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
